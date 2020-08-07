@@ -26,5 +26,6 @@ class CreateTrack(graphene.Mutation):
     track.save()
     return CreateTrack(track=track)
 
+
 class Mutation(graphene.ObjectType):
   create_track = CreateTrack.Field()
