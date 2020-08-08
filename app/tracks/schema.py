@@ -13,6 +13,9 @@ class Query(graphene.ObjectType):
   def resolve_tracks(self, info):
     return Track.objects.all()
 
+
+
+
 class CreateTrack(graphene.Mutation):
   track = graphene.Field(TrackType)
 
@@ -20,12 +23,16 @@ class CreateTrack(graphene.Mutation):
     title = graphene.String()
     description = graphene.String()
     url = graphene.String()
-
+  
   def mutate(self, info, title, description, url):
-    track = Track(title=title, description=description, url=url)
+    user = info.context.user
+
+    if user.is_anonymous:
+      raise Exception('Log in to add a track.')
+
+    track = Track(title=title, description=description, url=url, posted_by=user)
     track.save()
     return CreateTrack(track=track)
-
 
 class Mutation(graphene.ObjectType):
   create_track = CreateTrack.Field()
