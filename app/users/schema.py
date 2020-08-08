@@ -7,7 +7,6 @@ class UserType(DjangoObjectType):
   class Meta:
     model = get_user_model()
 
-
 class Query(graphene.ObjectType):
   user = graphene.Field(UserType, id=graphene.Int(required=True))
   me = graphene.Field(UserType)
