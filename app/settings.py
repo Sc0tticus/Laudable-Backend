@@ -107,7 +107,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-import django.db.backends.postgresql_psycopg2
+# import django.db.backends.postgresql_psycopg2
 
 DATABASES = {
     'default': {
