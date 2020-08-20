@@ -34,6 +34,10 @@ This API endpoint allows users to like audio files of their choosing. Liked audi
 Search Audio Files:
 This API endpoint allows users to search for audio files uploaded to https://laudable.tech/.
 
+*Demonstration Video*
+https://www.youtube.com/watch?v=y4oTaBYJs8w&feature=youtu.be
+
+
 *Challenges*
 
 This is my first project coding in Python and working with Graphene-Django, GraphQL, Insomnia, and Cloudinary. Using Graphene-Django simplified much of the backend code however understanding the nuances of how to succesfully do things within Python's virtual environment had me struggling at times. I also found the process of using GraphQL to create seed data and in using the Insomnia API REST Client for verifying user AUTH with JWT tokens, quite challenging.
@@ -56,5 +60,3 @@ Checkout new branch
 
 If you'd like to collaborate on this project, please email me at: ssinger303@gmail.com
 
-*Demonstration Video*
-https://www.youtube.com/watch?v=y4oTaBYJs8w&feature=youtu.be
