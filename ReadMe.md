@@ -55,3 +55,6 @@ Run frontend server: npm start
 Checkout new branch
 
 If you'd like to collaborate on this project, please email me at: ssinger303@gmail.com
+
+*Demonstration Video*
+https://www.youtube.com/watch?v=y4oTaBYJs8w&feature=youtu.be
