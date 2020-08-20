@@ -1,9 +1,10 @@
-Laudable.tech - Backend
+*Laudable.tech - Backend*
+
 This is the backend API for the website: https://laudable.tech/ . The API allows the frontend to add users, authenticate/authorize users, add audio files, download audio files, search for audio files, like audio files, and have all liked audio files show up on the logged in users profile.
 
 Frontend respository: https://github.com/Sc0tticus/Laudable-Frontend
 
-Built With
+*Built With*
 Frontend: JavaScript, React v16.8.2, React-Apollo v2.4.1, React-Dom v16.8.2, React-Player v1.9.3,
 React-Router-Dom v4.3.1, React-Scripts v2.1.5, Material-UI v3.0.1, Apollo-Boost v0.1.28, 
 Axios: v0.18.0, GrapQL v14.1.1,
@@ -15,7 +16,7 @@ whitenoise v5.2.0
 
 https://cloudinary.com/: was used to host all of the uploaded audio files.
 
-App Features
+*App Features*
 Authentication/Authorization
 Create a user account with your name:, email:, and password: and get authenticated with Django-GrapQL-JWT. 
 
@@ -31,15 +32,15 @@ This API endpoint allows users to like audio files of their choosing. Liked audi
 Search Audio Files
 This API endpoint allows users to search for audio files uploaded to https://laudable.tech/.
 
-Challenges
+*Challenges*
 This is my first project coding in Python and working with Graphene-Django, GraphQL, Insomnia, and Cloudinary. Using Graphene-Django simplified much of the backend code however understanding the nuances of how to succesfully do things within Python's virtual environment had me struggling at times. I also found the process of using GraphQL to create seed data and in using the Insomnia API REST Client for verifying user AUTH with JWT tokens, quite challenging.
 
-Future Implementation
+*Future Implementation*
 -Allow users to upload profile pictures.
 -Allow users to upload PDF's of their published work to be included with the audio file.
 -Text-to-speech option on uploaded PDF's in case the user doesn't have time to record an audio file.
 
-Collaboration
+*Collaboration*
 Fork and/or clone this repo & the frontend repo - https://github.com/Sc0tticus/Laudable-Frontend
 Create PostgreSQL database createdb laudible_db
 Migrate database tables in backend: python3 manage.py migrate
@@ -48,4 +49,4 @@ Install dependencies on frontend: npm install
 Run frontend server: npm start
 Checkout new branch
 
-If you'd like to collaborate on this project, please email me: ssinger303@gmail.com
+If you'd like to collaborate on this project, please email me at: ssinger303@gmail.com
