@@ -62,8 +62,8 @@ If you'd like to collaborate on this project, please email me at: ssinger303@gma
 
 git filter-branch --env-filter '
 
-OLD_EMAIL="github email address"
-CORRECT_NAME=  "Scott Singer"
+OLD_EMAIL= "github email address"
+CORRECT_NAME= "Scott Singer"
 CORRECT_EMAIL= "ssinger303@gmail.com"
 
 if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
@@ -77,5 +77,7 @@ export GIT_AUTHOR_NAME="$CORRECT_NAME"
 export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
 fi
 ' --tag-name-filter cat -- --branches --tags
+
+
 
 git push --force --tags origin 'refs/head'
